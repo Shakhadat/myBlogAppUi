@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import React from 'react';
+import Navbar from './components/navbar';
+
+// import { Route, Router } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+
+// import Navbar from './components/navbar';
+import Article from './mikrocomponents/Articl';
+import Editor from './mikrocomponents/Editor';
+import Home from './mikrocomponents/Home';
+import Login from './mikrocomponents/Login';
+import Register from './mikrocomponents/Register';
+import Settings from './mikrocomponents/Setting';
+import Profile from './mikrocomponents/Profile';
+import ProfileFavorites from './mikrocomponents/ProfileFavorites';
+
+class App extends React.Component {
+  render(){
+    return (
+      <div>
+       
+       <Navbar/>
+    
+        <Routes>
+       
+             <Route path="/"  element={<Home/>}/>
+            <Route path="/login" element={<Login/>} />
+            <Route path="/register" element={<Register/>} />
+            <Route path="/editor/:slug" element={<Editor/>} />
+            <Route path="/editor" element={<Editor/>} />
+            <Route path="/article/:id" element={<Article/>} />
+            <Route path="/settings" element={<Settings/>} />
+            <Route path="/@:username/favorites" element={<ProfileFavorites/>} />
+            <Route path="/@:username" element={<Profile/>} />
+           
+            </Routes>
+
+      
+          
+      </div>
+    );
+  }
+ 
 }
 
 export default App;

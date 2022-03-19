@@ -1,38 +1,147 @@
-.App {
+button{
+  cursor: pointer;
+}
+.blogcontent{
+  width: 75%;
+}
+.Toptitle{
+  background-color: rgba(92, 184, 92, 1);
+  width: 100%;
+  height: 150px;
+}
+.head{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.head>h1{
+  color:white;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+.head>p{
+  color:white;
+  font-size: 24px;
+  margin: 0;
+  padding: 0; 
+  font-weight: 200;
+}
+.user-pic{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.nav-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* login form sign in */
+.LoginInput{
+  border: 1px solid hsl(206, 7%, 54%);
+  height: 40px;
+  font-size: 16px;
+
+}
+
+.subtitletext{
+  font-size: 16px;
+  color:rgba(92, 184, 92, 1);
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cetrtext{
+  text-align: center;
+}
+.loginform{
+  width: 30%;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.SignBtn{
+  background-color: rgba(92, 184, 92, 0.8);
+  border: none;
   color: white;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 1rem;
+  border-radius: 5px;
+  float: right;
+}
+.SignBtn:hover{
+  background-color:rgba(92, 184, 92, 1);
+}
+/* profile user */
+
+.userImg{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.linkinfo{
+  color:grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-grey{
+  border: 1px solid hsl(206, 7%, 54%);
+  height: 40px;
+  width: 180px;
+  font-size: 16px;
+  background-color: transparent;
+  border-radius: 5px;
+  position: relative;
+  left: 80%;
+  bottom: 2rem;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon{
+  padding-right: 1rem;
+}
+.headprofile{
+  background-color: rgb(243, 243, 243);
+  height: 230px;
+  position: relative;
+}
+.userinfo{
+  
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+}
+.usernametr{
+  font-size:24px;
+  font-weight: 500;
+}
+/* globval form */
+.form{
+  width: 75%;
+   border-bottom: 1px solid rgba(129, 138, 145, 0.2);
+   
+}
+.feedBtn{
+  background-color: transparent;
+  border: none;
+  color:rgb(129, 138, 145);
+  font-size: 16px;
+  padding-bottom: 1rem;
+  margin-right:2rem ;
+}
+.feedBtn:active{
+  color:rgb(92, 184, 92);
+  border-bottom: 2px solid rgb(92, 184, 92);
+}
+.feedBtn:hover{
+  color:rgb(92, 184, 92);
+  border-bottom: 2px solid rgb(92, 184, 92);
+}
+.form2{
+  margin: 1rem auto;
+  width: 75%;
 }

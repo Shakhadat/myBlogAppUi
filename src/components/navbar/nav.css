@@ -1,0 +1,31 @@
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+.mynav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-brand{
+    color: #5cb85c;
+    font-size: 25px;
+    font-weight: 700;
+}
+.listgroup{
+    display: flex;
+    list-style-type: none;
+    /* justify-content: ; */
+align-items: center;
+}
+.nav-link{
+    text-decoration: none;
+    margin-left: 1rem;
+    color:rgba(129, 138, 145, 0.7)
+}
+.nav-link:hover{
+    color: rgba(129, 138, 145, 1);
+}
+.nav-link:active{
+    color: rgba(129, 138, 145, 1);
+}

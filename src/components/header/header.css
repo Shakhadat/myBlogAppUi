@@ -1,0 +1,31 @@
+.header{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PopularTag{
+    background-color: rgba(129, 138, 145, 0.2);
+    width: 20%;
+    padding: 1rem;
+
+}
+
+.TagsTitle{
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+}
+.poptagBtn{
+    border: none;
+    background-color: gray;
+    color: white;
+    height: 30px;
+    border-radius: 30px;
+    padding: 0 5px;
+    margin-right:5px;
+    margin-bottom: 5px;
+
+}

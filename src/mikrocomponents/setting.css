@@ -1,0 +1,77 @@
+fieldset{
+    border:none;
+    margin: 1rem 0;
+    padding: 0;
+}
+.text-xs-center{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+.setform{
+    /* background-color: aqua; */
+    width: 90%;
+    margin: 0 auto;
+}
+.mainField{
+    background-color: white;
+}
+.form-group>input{
+    /* background-color: yellow; */
+    width: 100%;
+    border: 1px solid rgba(129, 138, 145, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+}
+.formelement{
+    width: 100%;
+    border: 1px solid rgba(129, 138, 145, 0.5);
+    padding: 0 5px;
+    height: 50px;
+    border-radius: 5px;
+}
+.formtextarea{
+    width: 100%;
+    border: 1px solid rgba(129, 138, 145, 0.5);
+    padding: 0 5px;
+    height: 150px;
+    border-radius: 5px;
+}
+.setsubmit{
+    background-color: rgba(92, 184, 92, 0.8);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    padding: 0 1rem;
+    font-size: 16px;
+    float: right;
+    /* margin-right: 0; */
+}
+.setsubmit:hover{
+    background-color: rgba(92, 184, 92, 1);
+}
+.pass{
+    background-color: rgb(232, 240, 254);
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color:rgba(129, 138, 145, 0.5);;
+}
+.btn-outline-danger{
+    border: 1px solid rgb(184, 92, 92);
+    color: rgb(184, 92, 92);
+    border-radius: 5px;
+    height: 50px;
+    padding: 0 1rem;
+    font-size: 16px;
+    background-color: transparent;
+    margin-top: 1rem;
+}
+.btn-outline-danger:hover{
+    border: 1px solid rgb(184, 92, 92);
+    background-color: rgb(184, 92, 92);
+    color:white;
+
+}
